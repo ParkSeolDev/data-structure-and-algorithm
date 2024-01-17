@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void MySwapValue(int x, int y)
+void SwapValue(int x, int y)
 {
     int temp = x;
     x = y;
@@ -10,14 +10,14 @@ void MySwapValue(int x, int y)
     // 구조체, 컨테이너 사용 가능
 }
 
-void MySwapPtr(int* x, int* y)
+void SwapPtr(int* x, int* y)
 {
     int temp = *x;
     *x = *y;
     *y = temp;
 }
 
-void MySwapRef(int& x, int& y)
+void SwapRef(int& x, int& y)
 {
     int temp = x;
     x = y;
@@ -41,9 +41,9 @@ int main()
         // MySwapValue(a, b);
         std::swap(a, b);
 
-        MySwapPtr(&a, &b);
+        SwapPtr(&a, &b);
 
-        MySwapRef(a, b);
+        SwapRef(a, b);
 
         cout << a << " " << b << endl;
     }
